@@ -142,7 +142,7 @@ open class Factory<T> {
 
     for (key, value) in self.transforms {
       if let transformValue = attributes.removeValue(forKey: key) {
-        attributes += value(value: transformValue)
+        attributes += value(transformValue)
       }
     }
 
